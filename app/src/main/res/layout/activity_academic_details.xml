@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.section3.AcademicDetails">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <!-- Academic Details -->
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="Academic Details"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <!-- Class 10 Score -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Class 10th Score"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/class10ScoreRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+          <!-- Radio Buttons for Class 10 Score Options -->
+          <!-- Customize the styles and colors as needed -->
+          <RadioButton
+              android:id="@+id/class10ScoreOption1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="90+"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:id="@+id/class10ScoreOption2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="80+"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:id="@+id/class10ScoreOption3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="75+"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:id="@+id/class10ScoreOption4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:padding="10dp"
+              android:text="Below 75"
+              android:textColor="@drawable/rb_text_color" />
+        </RadioGroup>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <!-- Class 10 Score -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Class 12th Score"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/class12ScoreRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+          <!-- Radio Buttons for Class 10 Score Options -->
+          <!-- Customize the styles and colors as needed -->
+
+          <RadioButton
+              android:id="@+id/class12ScoreOption2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="80+"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:id="@+id/class12ScoreOption3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="75+"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:id="@+id/class12ScoreOption4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:padding="10dp"
+              android:text="Below 75"
+              android:textColor="@drawable/rb_text_color" />
+        </RadioGroup>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <!-- Class 10 Score -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="College GPA"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/classGPAScoreRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+          <!-- Radio Buttons for Class 10 Score Options -->
+          <!-- Customize the styles and colors as needed -->
+          <RadioButton
+              android:id="@+id/classGPAScoreOption1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="9"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:id="@+id/classGPAScoreOption2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="8"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:padding="10dp"
+              android:id="@+id/classGPAScoreOption3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="Above 7"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:id="@+id/classGPAScoreOption4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:padding="10dp"
+              android:text="Below 7"
+              android:textColor="@drawable/rb_text_color" />
+        </RadioGroup>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <!-- Class 10 Score -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Rank in College"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/classCLGScoreRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+          <!-- Radio Buttons for Class 10 Score Options -->
+          <!-- Customize the styles and colors as needed -->
+          <RadioButton
+              android:padding="10dp"
+              android:id="@+id/classCLGScoreOption1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="Top 10% in your batch and branch"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:padding="10dp"
+              android:id="@+id/classCLGScoreOption2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="Top 25%"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:padding="10dp"
+              android:id="@+id/classCLGScoreOption3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="Below 25%"
+              android:textColor="@drawable/rb_text_color" />
+
+        </RadioGroup>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <!-- Class 10 Score -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Rank in university"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/classUGScoreRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+          <!-- Radio Buttons for Class 10 Score Options -->
+          <!-- Customize the styles and colors as needed -->
+          <RadioButton
+              android:id="@+id/classUGScoreOption1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="Top 10"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:id="@+id/classUGScoreOption2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="10-25"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:id="@+id/classUGScoreOption3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:text="25-50"
+              android:textColor="@drawable/rb_text_color" />
+
+          <RadioButton
+              android:id="@+id/classUGUScoreOption4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:background="@drawable/radio_selector"
+              android:button="android:color/transparent"
+              android:gravity="center"
+              android:padding="10dp"
+              android:text="50+"
+              android:textColor="@drawable/rb_text_color" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:text="next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="50dp"/>
+
+      <!-- Repeat the same structure for other questions -->
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>
