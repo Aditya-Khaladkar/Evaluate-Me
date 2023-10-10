@@ -24,18 +24,36 @@
         android:orientation="horizontal">
 
         <RadioButton
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="center"
             android:id="@+id/maleRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Male"/>
 
         <RadioButton
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="center"
             android:id="@+id/femaleRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female"/>
 
         <RadioButton
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="center"
             android:id="@+id/otherRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
