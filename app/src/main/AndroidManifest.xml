@@ -15,6 +15,12 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".view.section2.QuesGender"
+            android:exported="false" />
+        <activity
+            android:name=".view.section1.NameAndEmail"
+            android:exported="false" />
+        <activity
             android:name=".auth.SignUp"
             android:exported="false" />
         <activity
