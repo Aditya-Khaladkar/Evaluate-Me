@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.section4.NotableAchievements">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Academic Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Notable Achievements"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Question 1 -->
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/meritScholarshipCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Received Merit Scholarship in college" />
+
+        <!-- Question 2 -->
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="start"
+            android:id="@+id/academicProjectsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="I have engaged in academic projects and have a research paper to my name" />
+
+        <!-- Question 3 -->
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/patentCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="I have a patent" />
+
+        <!-- Question 4 -->
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="start"
+            android:id="@+id/researchInternshipCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Research Internship at a reputed University or Foreign University / Exchange program" />
+
+        <!-- Add more questions here as needed -->
+
+        <!-- Next Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Next" />
+
+    </LinearLayout>
+</ScrollView>
