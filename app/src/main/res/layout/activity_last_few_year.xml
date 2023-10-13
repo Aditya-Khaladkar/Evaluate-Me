@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.section5.LastFewYear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Academic Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="What have you been a part of in the last few years "
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Question 1 -->
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/meritScholarshipCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="NGO" />
+
+        <!-- Question 2 -->
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="start"
+            android:id="@+id/academicProjectsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Associations/ college clubs/societies in college " />
+
+        <!-- Question 3 -->
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="center"
+            android:id="@+id/patentCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Sports at college / inter-university level " />
+
+        <!-- Question 4 -->
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="start"
+            android:id="@+id/researchInternshipCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="I played and won some sport/s at the zonal/ local level" />
+
+        <!-- Add more questions here as needed -->
+
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="I played and won some sport/s at the State level" />
+
+
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="I played and won some sport/s at National / International Leve" />
+
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Theatre at reputed  level like movies/ TV serials/ OTT etc" />
+
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Theatre/dance/music/ arts or any creative activity for fun / recreation" />
+
+        <CheckBox
+            android:padding="10dp"
+            android:textColor="@drawable/rb_text_color"
+            android:background="@drawable/radio_selector"
+            android:button="android:color/transparent"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Competitions like hackathons/ startup events / professional conferences etc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+                android:padding="10dp"
+                android:textColor="@drawable/rb_text_color"
+                android:background="@drawable/radio_selector"
+                android:button="android:color/transparent"
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Have you ever written a book / short stories / do you blog on linkedin and have substantial followers/ any other such spike that shows leadership / creativity at a grand level." />
+
+            <RadioGroup
+                android:id="@+id/boolRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:textColor="@drawable/rb_text_color"
+                    android:background="@drawable/radio_selector"
+                    android:button="android:color/transparent"
+                    android:gravity="center"
+                    android:id="@+id/yesRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@drawable/rb_text_color"
+                    android:background="@drawable/radio_selector"
+                    android:button="android:color/transparent"
+                    android:gravity="center"
+                    android:id="@+id/noRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:textColor="@drawable/rb_text_color"
+                    android:background="@drawable/radio_selector"
+                    android:button="android:color/transparent"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Just participated as a hobby"/>
+
+                <RadioButton
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@drawable/rb_text_color"
+                    android:background="@drawable/radio_selector"
+                    android:button="android:color/transparent"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I was on the organizing team of such events"/>
+
+                <RadioButton
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@drawable/rb_text_color"
+                    android:background="@drawable/radio_selector"
+                    android:button="android:color/transparent"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I was in the leadership position for these activities"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- Next Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -15,6 +15,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".view.section5.LastFewYear"
+            android:exported="false" />
+        <activity
             android:name=".view.section4.NotableAchievements"
             android:exported="false" />
         <activity
