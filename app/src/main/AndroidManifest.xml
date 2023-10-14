@@ -15,6 +15,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".view.section6.BusinessAchieved"
+            android:exported="false" />
+        <activity
             android:name=".view.section5.LastFewYear"
             android:exported="false" />
         <activity
@@ -22,7 +25,13 @@
             android:exported="false" />
         <activity
             android:name=".view.section3.AcademicDetails"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".view.section2.QuesGender"
             android:exported="false" />
@@ -38,11 +47,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

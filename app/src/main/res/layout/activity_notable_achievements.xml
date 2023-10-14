@@ -22,13 +22,14 @@
 
         <!-- Question 1 -->
         <CheckBox
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/achieve_1"
             android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
             android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
+            android:button="@color/app_theme"
             android:gravity="center"
             android:id="@+id/meritScholarshipCheckBox"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginStart="10dp"
@@ -37,10 +38,11 @@
 
         <!-- Question 2 -->
         <CheckBox
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/achieve_2"
             android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
             android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
+            android:button="@color/app_theme"
             android:gravity="start"
             android:id="@+id/academicProjectsCheckBox"
             android:layout_width="wrap_content"
@@ -50,23 +52,25 @@
 
         <!-- Question 3 -->
         <CheckBox
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/achieve_3"
             android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
             android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
+            android:button="@color/app_theme"
             android:gravity="center"
             android:id="@+id/patentCheckBox"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="I have a patent" />
 
         <!-- Question 4 -->
         <CheckBox
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/achieve_4"
             android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
             android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
+            android:button="@color/app_theme"
             android:gravity="start"
             android:id="@+id/researchInternshipCheckBox"
             android:layout_width="wrap_content"
@@ -82,6 +86,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
 
     </LinearLayout>
 </ScrollView>
