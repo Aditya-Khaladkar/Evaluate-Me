@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@id/t1">
 
         <EditText
-            android:id="@+id/logUsername"
+            android:id="@+id/regUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@id/textInputUsername">
 
         <EditText
-            android:id="@+id/logEmail"
+            android:id="@+id/regEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -70,7 +70,7 @@
         app:passwordToggleEnabled="true">
 
         <EditText
-            android:id="@+id/logPassword"
+            android:id="@+id/regPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="password"
@@ -80,7 +80,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnSignIn"
+        android:id="@+id/btnSignUp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_gravity="center"
@@ -90,12 +90,13 @@
         app:layout_constraintTop_toBottomOf="@id/textInputPassword" />
 
     <LinearLayout
+        android:id="@+id/txtSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/btnSignIn">
+        app:layout_constraintTop_toBottomOf="@id/btnSignUp">
 
         <TextView
             android:layout_width="wrap_content"
