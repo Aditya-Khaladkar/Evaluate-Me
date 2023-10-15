@@ -25,16 +25,16 @@
             android:exported="false" />
         <activity
             android:name=".view.section3.AcademicDetails"
-            android:exported="true">
+            android:exported="false" />
+        <activity
+            android:name=".view.section2.QuesGender"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".view.section2.QuesGender"
-            android:exported="false" />
         <activity
             android:name=".view.section1.NameAndEmail"
             android:exported="false" />

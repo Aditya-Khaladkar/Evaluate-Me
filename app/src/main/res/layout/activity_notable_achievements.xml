@@ -33,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:text="Received Merit Scholarship in college" />
 
@@ -43,7 +44,7 @@
             android:padding="10dp"
             android:background="@drawable/radio_selector"
             android:button="@color/app_theme"
-            android:gravity="start"
+            android:gravity="center"
             android:id="@+id/academicProjectsCheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,7 +72,7 @@
             android:padding="10dp"
             android:background="@drawable/radio_selector"
             android:button="@color/app_theme"
-            android:gravity="start"
+            android:gravity="center"
             android:id="@+id/researchInternshipCheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,6 +83,7 @@
 
         <!-- Next Button -->
         <Button
+            android:id="@+id/btnAchieveNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

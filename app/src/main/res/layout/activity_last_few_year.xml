@@ -22,128 +22,212 @@
 
         <!-- Question 1 -->
         <CheckBox
-            android:drawableTop="@drawable/social_1"
-            android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
-            android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
-            android:gravity="center"
-            android:id="@+id/meritScholarshipCheckBox"
+            android:id="@+id/ngoCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:text="NGO" />
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
+            android:drawableTop="@drawable/social_1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="NGO"
+            android:textColor="@drawable/rb_text_color" />
 
         <!-- Question 2 -->
         <CheckBox
-            android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
-            android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
-            android:gravity="center"
-            android:drawableTop="@drawable/social_2"
-            android:id="@+id/academicProjectsCheckBox"
+            android:id="@+id/collegeClubsCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Associations/ college clubs/societies in college " />
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
+            android:drawableTop="@drawable/social_2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Associations/ college clubs"
+            android:textColor="@drawable/rb_text_color" />
 
         <!-- Question 3 -->
         <CheckBox
-            android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
-            android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
-            android:gravity="center"
-            android:drawableTop="@drawable/social_3"
-            android:id="@+id/patentCheckBox"
+            android:id="@+id/sportsCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Sports at college / inter-university level " />
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
+            android:drawableTop="@drawable/social_3"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Sports at college"
+            android:textColor="@drawable/rb_text_color" />
 
         <!-- Question 4 -->
         <CheckBox
+            android:id="@+id/zonalSportsCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
             android:drawableTop="@drawable/social_4"
-            android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
-            android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
             android:gravity="start"
-            android:id="@+id/researchInternshipCheckBox"
+            android:padding="10dp"
+            android:text="Zonal/ local level sports"
+            android:textColor="@drawable/rb_text_color" />
+
+        <!-- Additional Questions -->
+        <CheckBox
+            android:id="@+id/stateSportsCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="I played and won some sport/s at the zonal/ local level" />
-
-        <!-- Add more questions here as needed -->
-
-        <CheckBox
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
             android:drawableTop="@drawable/social_5"
-            android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
-            android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
             android:gravity="center"
+            android:padding="10dp"
+            android:text="State level sports"
+            android:textColor="@drawable/rb_text_color" />
+
+        <CheckBox
+            android:id="@+id/nationalSportsCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="I played and won some sport/s at the State level" />
-
-
-        <CheckBox
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
             android:drawableTop="@drawable/social_6"
-            android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
-            android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
             android:gravity="center"
+            android:padding="10dp"
+            android:text="National/ International sports"
+            android:textColor="@drawable/rb_text_color" />
+
+        <CheckBox
+            android:id="@+id/theatreReputedCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="I played and won some sport/s at National / International Leve" />
-
-        <CheckBox
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
             android:drawableTop="@drawable/social_8"
-            android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
-            android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
             android:gravity="center"
+            android:padding="10dp"
+            android:text="Theatre at reputed level"
+            android:textColor="@drawable/rb_text_color" />
+
+        <CheckBox
+            android:id="@+id/artsRecreationCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Theatre at reputed  level like movies/ TV serials/ OTT etc" />
-
-        <CheckBox
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
             android:drawableTop="@drawable/social_9"
-            android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
-            android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
             android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Theatre/dance/music/ arts or any creative activity for fun / recreation" />
+            android:padding="10dp"
+            android:text="Arts for fun/recreation"
+            android:textColor="@drawable/rb_text_color" />
 
         <CheckBox
-            android:drawableTop="@drawable/social_10"
-            android:padding="10dp"
-            android:textColor="@drawable/rb_text_color"
-            android:background="@drawable/radio_selector"
-            android:button="android:color/transparent"
-            android:gravity="center"
+            android:id="@+id/competitionsCheckBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Competitions like hackathons/ startup events / professional conferences etc" />
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
+            android:drawableTop="@drawable/social_10"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Competitions like hackathons"
+            android:textColor="@drawable/rb_text_color" />
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/radio_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have you ever written a book / short stories / do you blog on linkedin and have substantial followers/ any other such spike that shows leadership / creativity at a grand level." />
+
+            <RadioGroup
+                android:id="@+id/lastFewYrRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/lastFewYrYES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/lastFewYrNO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="No" />
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/lastFewYrRadioGroupActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/lastFewYrHobby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/app_theme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Just participated as a hobby" />
+
+                <RadioButton
+                    android:id="@+id/lastFewYrEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/app_theme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="I was on the organizing team of such events" />
+
+                <RadioButton
+                    android:id="@+id/lastFewYrLeadership"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/app_theme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="I was in the leadership position for these activities" />
+
+            </RadioGroup>
+
+        </LinearLayout>
 
         <!-- Next Button -->
         <Button
+            android:id="@+id/btnFewAchieveNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -151,7 +235,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp" />
 
     </LinearLayout>
 </ScrollView>

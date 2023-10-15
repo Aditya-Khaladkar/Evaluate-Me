@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.evaluateme.auth.SignIn
+import com.example.evaluateme.auth.SignUp
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Handler().postDelayed(Runnable {
-            startActivity(Intent(this, SignIn::class.java))
+            startActivity(Intent(this, SignUp::class.java))
             finish()
         }, 2000)
     }

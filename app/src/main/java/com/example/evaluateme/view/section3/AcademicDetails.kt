@@ -1,14 +1,12 @@
 package com.example.evaluateme.view.section3
 
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.RadioButton
 import android.widget.Toast
-import com.example.evaluateme.R
+import androidx.appcompat.app.AppCompatActivity
 import com.example.evaluateme.databinding.ActivityAcademicDetailsBinding
+import com.example.evaluateme.view.section4.NotableAchievements
 
 class AcademicDetails : AppCompatActivity() {
     lateinit var binding: ActivityAcademicDetailsBinding
@@ -139,8 +137,9 @@ class AcademicDetails : AppCompatActivity() {
 
             Toast.makeText(this, score.toString(), Toast.LENGTH_LONG).show()
 
-            startActivity(Intent(this, AcademicDetails::class.java))
-            finish()
+            val intent = Intent(this, NotableAchievements::class.java)
+            intent.putExtra("score", score)
+            startActivity(intent)
 
         }
     }
