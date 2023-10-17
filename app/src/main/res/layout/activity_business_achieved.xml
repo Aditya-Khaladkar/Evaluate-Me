@@ -1,9 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".view.section6.BusinessAchieved">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Academic Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Have you achieved any of the following?"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Question 1 -->
+        <CheckBox
+            android:id="@+id/successfulEntrepreneurCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
+            android:drawableTop="@drawable/business_1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Succesful Entrepreneurial venture"
+            android:textColor="@drawable/rb_text_color" />
+
+        <CheckBox
+            android:id="@+id/startupExposureCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
+            android:drawableTop="@drawable/business_2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Startup exposure at a substantial / growth and not static role (not a founder) "
+            android:textColor="@drawable/rb_text_color" />
+
+        <CheckBox
+            android:id="@+id/highRevenueProjectsCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/radio_selector"
+            android:button="@color/app_theme"
+            android:drawableTop="@drawable/social_10"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Projects at workplace that have had 10L+ in revenue/projects that grew by almost 100% in your leadership or by your contribution "
+            android:textColor="@drawable/rb_text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/radio_selector"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Certifications" />
+
+            <RadioGroup
+                android:id="@+id/CertificationsRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/CertificationsYES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/CertificationsNO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="No" />
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/CertificationsRadioGroupActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <CheckBox
+                    android:id="@+id/certificateSixSigma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/app_theme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Six Sigma Green belt/ black belt" />
+
+                <CheckBox
+                    android:id="@+id/certificateYellowBelt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/app_theme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Six Sigma Yellow belt" />
+
+                <CheckBox
+                    android:id="@+id/certificateCFA23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/app_theme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="CFA Level 2/3" />
+
+                <CheckBox
+                    android:id="@+id/certificateCFA1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/app_theme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="CFA Level 1" />
+
+                <CheckBox
+                    android:id="@+id/certificateFRM12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/app_theme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="FRM level 1/2" />
+
+                <CheckBox
+                    android:id="@+id/certificateCA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/radio_selector"
+                    android:button="@color/app_theme"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="CA" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/btnBusinessNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+</ScrollView>
