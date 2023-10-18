@@ -1,5 +1,6 @@
 package com.example.evaluateme.view.section6
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,7 @@ import android.widget.RadioButton
 import android.widget.Toast
 import com.example.evaluateme.R
 import com.example.evaluateme.databinding.ActivityBusinessAchievedBinding
+import com.example.evaluateme.view.section7.TestScore
 
 class BusinessAchieved : AppCompatActivity() {
     lateinit var binding: ActivityBusinessAchievedBinding
@@ -55,6 +57,10 @@ class BusinessAchieved : AppCompatActivity() {
             } else if (binding.certificateCA.isChecked) {
                 score += 4
             }
+
+            val intent = Intent(this, TestScore::class.java)
+            intent.putExtra("score", score)
+            startActivity(intent)
         }
     }
 }

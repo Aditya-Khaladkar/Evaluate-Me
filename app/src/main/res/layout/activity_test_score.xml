@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".view.section7.TestScore">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Test scores / tentative test scores"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/gre" />
+
+        <SeekBar
+            android:layout_marginTop="20dp"
+            android:id="@+id/greSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="1000"
+            android:progress="0"
+            android:progressBackgroundTint="#E0E0E0"
+            android:progressTint="#4CAF50"
+            android:thumbTint="#4CAF50" />
+
+        <TextView
+            android:id="@+id/txtGreScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="GRE Score: 1000"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/gmat" />
+
+        <SeekBar
+            android:layout_marginTop="20dp"
+            android:id="@+id/gmatSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="1000"
+            android:progress="0"
+            android:progressBackgroundTint="#E0E0E0"
+            android:progressTint="#2196F3"
+            android:thumbTint="#2196F3" />
+
+        <TextView
+            android:id="@+id/txtGMATScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="GMAT Score: 1000"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/app_theme"
+                android:drawableTop="@drawable/score12_2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="classic " />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/app_theme"
+                android:drawableTop="@drawable/mindfulness"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Focus " />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/btnTestScoreNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="next" />
+
+    </LinearLayout>
+</ScrollView>
