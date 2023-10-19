@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TotalScore">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your total score is"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/finalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="50sp"/>
+
+        <View
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d3d3d3"/>
+
+        <TextView
+            android:id="@+id/academic_score_textview"
+            android:padding="11dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/radio_selector"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="Academic Score"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/notable_achievements_textview"
+            android:padding="11dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/radio_selector"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="Notable achievements"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/college_activity_textview"
+            android:padding="11dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/radio_selector"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="College Activity"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/business_achievements_textview"
+            android:padding="11dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/radio_selector"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="Business Achievements"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/gre_gmat_textview"
+            android:padding="11dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/radio_selector"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="GRE / GMAT"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/work_experience_textview"
+            android:padding="11dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/radio_selector"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="Work Experience"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

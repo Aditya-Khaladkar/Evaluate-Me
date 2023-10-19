@@ -1,6 +1,8 @@
 package com.example.evaluateme.view.section3
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.RadioButton
 import android.widget.Toast
@@ -10,14 +12,18 @@ import com.example.evaluateme.view.section4.NotableAchievements
 
 class AcademicDetails : AppCompatActivity() {
     lateinit var binding: ActivityAcademicDetailsBinding
-
+    lateinit var sharedPref: SharedPreferences
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAcademicDetailsBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
+        sharedPref = getSharedPreferences("ScorePref", Context.MODE_PRIVATE)
+
         var score: Int = intent.getIntExtra("score", 0)
+
+        var acaScore = 0
 
         binding.btnAcaNext.setOnClickListener {
 
@@ -32,15 +38,19 @@ class AcademicDetails : AppCompatActivity() {
                 when (select) {
                     "90 +" -> {
                         score += 4
+                        acaScore += 4
                     }
                     "80 +" -> {
                         score += 3
+                        acaScore += 3
                     }
                     "75 +" -> {
                         score += 2
+                        acaScore += 2
                     }
                     "75 and below" -> {
                         score += 1
+                        acaScore += 1
                     }
                 }
             }
@@ -56,12 +66,15 @@ class AcademicDetails : AppCompatActivity() {
                 when (select) {
                     "85 +" -> {
                         score += 4
+                        acaScore += 4
                     }
                     "75 +" -> {
                         score += 3
+                        acaScore += 3
                     }
                     "Below 75" -> {
                         score += 2
+                        acaScore += 2
                     }
                 }
             }
@@ -77,15 +90,19 @@ class AcademicDetails : AppCompatActivity() {
                 when (select) {
                     "Above 9" -> {
                         score += 5
+                        acaScore += 5
                     }
                     "Above 8" -> {
                         score += 4
+                        acaScore += 4
                     }
                     "Above 7" -> {
                         score += 3
+                        acaScore += 3
                     }
                     "Below 7" -> {
                         score += 2
+                        acaScore += 2
                     }
                 }
             }
@@ -101,12 +118,15 @@ class AcademicDetails : AppCompatActivity() {
                 when (select) {
                     "Top 10% in your batch and branch" -> {
                         score += 2
+                        acaScore += 2
                     }
                     "Top 25%" -> {
                         score += 1
+                        acaScore += 1
                     }
                     "Below 25%" -> {
                         score += 0
+                        acaScore += 0
                     }
                 }
             }
@@ -122,20 +142,27 @@ class AcademicDetails : AppCompatActivity() {
                 when (select) {
                     "Top 10" -> {
                         score += 3
+                        acaScore += 3
                     }
                     "10-25" -> {
                         score += 2
+                        acaScore += 2
                     }
                     "25-50" -> {
                         score += 1
+                        acaScore += 1
                     }
                     "50 +" -> {
                         score += 0
+                        acaScore += 0
                     }
                 }
             }
 
             Toast.makeText(this, score.toString(), Toast.LENGTH_LONG).show()
+
+            val editor = sharedPref.edit()
+            editor.putInt("AcademicScore", acaScore)
 
             val intent = Intent(this, NotableAchievements::class.java)
             intent.putExtra("score", score)

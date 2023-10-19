@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".view.section8.WorkExperience">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Academic Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Years of work experience"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Radio Group for Options -->
+        <RadioGroup
+            android:id="@+id/experienceRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/expIntern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/app_theme"
+                android:drawableTop="@drawable/work_5"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Just Internship (Kindly choose this only if you are planning for any degree except MBA)"
+                android:textColor="@drawable/rb_text_color" />
+
+            <!-- Option 1 -->
+            <RadioButton
+                android:id="@+id/exp02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/app_theme"
+                android:drawableTop="@drawable/work_1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0 - 2"
+                android:textColor="@drawable/rb_text_color" />
+            <!-- Option 2 -->
+            <RadioButton
+                android:id="@+id/exp24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/app_theme"
+                android:drawableTop="@drawable/work_2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="2 - 4"
+                android:textColor="@drawable/rb_text_color" />
+            <!-- Option 3 -->
+            <RadioButton
+                android:id="@+id/exp5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/app_theme"
+                android:drawableTop="@drawable/work_3"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="5"
+                android:textColor="@drawable/rb_text_color" />
+            <!-- Option 4 -->
+            <RadioButton
+                android:id="@+id/exp5above"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/app_theme"
+                android:drawableTop="@drawable/work_4"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="5 +"
+                android:textColor="@drawable/rb_text_color" />
+            <!-- Additional Questions -->
+
+        </RadioGroup>
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/btnWorkExpNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+</ScrollView>
