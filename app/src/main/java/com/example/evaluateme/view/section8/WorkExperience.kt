@@ -13,14 +13,18 @@ import com.example.evaluateme.databinding.ActivityWorkExperienceBinding
 
 class WorkExperience : AppCompatActivity() {
     lateinit var binding: ActivityWorkExperienceBinding
-    lateinit var sharedPref: SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityWorkExperienceBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
-        sharedPref = getSharedPreferences("ScorePref", Context.MODE_PRIVATE)
+        val acaScore: Int = intent.getIntExtra("AcademicScore", 0)
+        val nScore: Int = intent.getIntExtra("nScore", 0)
+        val laScore: Int = intent.getIntExtra("laScore", 0)
+        val businessScore: Int = intent.getIntExtra("businessScore", 0)
+        val testScore: Int = intent.getIntExtra("testScore", 0)
 
         var score: Int = intent.getIntExtra("score", 0)
 
@@ -59,11 +63,16 @@ class WorkExperience : AppCompatActivity() {
                 }
             }
 
-            val edit = sharedPref.edit()
-            edit.putInt("workExp", workExp)
+
 
             val intent = Intent(this, CompanyType::class.java)
             intent.putExtra("score", score)
+            intent.putExtra("nScore", nScore)
+            intent.putExtra("AcademicScore", acaScore)
+            intent.putExtra("laScore", laScore)
+            intent.putExtra("businessScore", businessScore)
+            intent.putExtra("testScore", testScore)
+            intent.putExtra("workExp", workExp)
             startActivity(intent)
         }
     }

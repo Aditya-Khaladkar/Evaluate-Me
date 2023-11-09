@@ -14,14 +14,15 @@ import com.example.evaluateme.view.section6.BusinessAchieved
 
 class LastFewYear : AppCompatActivity() {
     lateinit var binding: ActivityLastFewYearBinding
-    lateinit var sharedPref: SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLastFewYearBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
-        sharedPref = getSharedPreferences("ScorePref", Context.MODE_PRIVATE)
+        val acaScore: Int = intent.getIntExtra("AcademicScore", 0)
+        val nScore: Int = intent.getIntExtra("nScore", 0)
 
         var score: Int = intent.getIntExtra("score", 0)
 
@@ -99,10 +100,10 @@ class LastFewYear : AppCompatActivity() {
 
             Toast.makeText(this, score.toString(), Toast.LENGTH_LONG).show()
 
-            val edit = sharedPref.edit()
-            edit.putInt("LaScore", laScore)
-
             val intent = Intent(this, BusinessAchieved::class.java)
+            intent.putExtra("nScore", nScore)
+            intent.putExtra("AcademicScore", acaScore)
+            intent.putExtra("laScore", laScore)
             intent.putExtra("score", score)
             startActivity(intent)
         }

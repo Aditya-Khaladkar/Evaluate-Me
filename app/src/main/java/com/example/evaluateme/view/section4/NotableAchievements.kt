@@ -12,15 +12,16 @@ import com.example.evaluateme.view.section5.LastFewYear
 
 class NotableAchievements : AppCompatActivity() {
     lateinit var binding: ActivityNotableAchievementsBinding
-    lateinit var sharedPref: SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityNotableAchievementsBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
-        sharedPref = getSharedPreferences("ScorePref", Context.MODE_PRIVATE)
 
+
+        val acaScore: Int = intent.getIntExtra("AcademicScore", 0)
         var score: Int = intent.getIntExtra("score", 0)
 
         var nScore = 0
@@ -42,11 +43,11 @@ class NotableAchievements : AppCompatActivity() {
 
             Toast.makeText(this, score.toString(), Toast.LENGTH_LONG).show()
 
-            val editor = sharedPref.edit()
-            editor.putInt("NotableScore", nScore)
 
             val intent = Intent(this, LastFewYear::class.java)
             intent.putExtra("score", score)
+            intent.putExtra("nScore", nScore)
+            intent.putExtra("AcademicScore", acaScore)
             startActivity(intent)
         }
     }

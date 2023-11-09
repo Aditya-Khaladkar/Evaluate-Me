@@ -20,7 +20,7 @@
             android:textStyle="bold" />
 
         <!-- Radio Group for Options -->
-        <FrameLayout
+        <HorizontalScrollView
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -66,29 +66,6 @@
                         android:padding="10dp"
                         android:text="International MNC"/>
 
-                </RadioGroup>
-
-            </LinearLayout>
-
-        </FrameLayout>
-
-        <FrameLayout
-            android:layout_margin="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioGroup
-                    android:id="@+id/companyTypeRadioGroup2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
                     <RadioButton
                         android:id="@+id/rbLocalCompany"
                         android:layout_width="wrap_content"
@@ -122,7 +99,7 @@
 
             </LinearLayout>
 
-        </FrameLayout>
+        </HorizontalScrollView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -131,63 +108,43 @@
             android:text="Workplace achievements"
             android:textStyle="bold" />
 
-        <!-- Radio Group for Options -->
-        <FrameLayout
-            android:layout_margin="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RadioGroup
-                    android:id="@+id/workplaceAchievementsRadioGroup"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/rbTeamLeader"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/radio_selector"
-                        android:button="@color/app_theme"
-                        android:drawableTop="@drawable/company2_1"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="Led a team of 10+"/>
-
-                    <Space
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"/>
-
-                    <RadioButton
-                        android:id="@+id/rbPromotions"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/radio_selector"
-                        android:button="@color/app_theme"
-                        android:drawableTop="@drawable/company2_2"
-                        android:gravity="center"
-                        android:padding="10dp"
-                        android:text="Multiple promotions"/>
-
-                </RadioGroup>
-
-            </LinearLayout>
-
-        </FrameLayout>
-
         <RadioGroup
+            android:id="@+id/workplaceAchievementsRadioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <RadioButton
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/rbTeamLeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/app_theme"
+                android:drawableTop="@drawable/company2_1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Led a team of 10+"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_gravity="center"
+                android:id="@+id/rbPromotions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/radio_selector"
+                android:button="@color/app_theme"
+                android:drawableTop="@drawable/company2_2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Multiple promotions"/>
 
             <RadioButton
                 android:id="@+id/rbIncreasedRevenue"

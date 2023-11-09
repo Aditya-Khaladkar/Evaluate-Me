@@ -14,14 +14,16 @@ import com.example.evaluateme.view.section7.TestScore
 
 class BusinessAchieved : AppCompatActivity() {
     lateinit var binding: ActivityBusinessAchievedBinding
-    lateinit var sharedPref: SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBusinessAchievedBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
-        sharedPref = getSharedPreferences("ScorePref", Context.MODE_PRIVATE)
+        val acaScore: Int = intent.getIntExtra("AcademicScore", 0)
+        val nScore: Int = intent.getIntExtra("nScore", 0)
+        val laScore: Int = intent.getIntExtra("laScore", 0)
 
         var score: Int = intent.getIntExtra("score", 0)
 
@@ -74,10 +76,12 @@ class BusinessAchieved : AppCompatActivity() {
                 businessScore += 4
             }
 
-            val edit = sharedPref.edit()
-            edit.putInt("businessScore", businessScore)
 
             val intent = Intent(this, TestScore::class.java)
+            intent.putExtra("nScore", nScore)
+            intent.putExtra("AcademicScore", acaScore)
+            intent.putExtra("laScore", laScore)
+            intent.putExtra("businessScore", businessScore)
             intent.putExtra("score", score)
             startActivity(intent)
         }

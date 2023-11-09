@@ -1,5 +1,6 @@
 package com.example.evaluateme
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
@@ -10,39 +11,33 @@ import com.example.evaluateme.databinding.ActivityTotalScoreBinding
 
 class TotalScore : AppCompatActivity() {
     lateinit var binding: ActivityTotalScoreBinding
-    lateinit var sharedPref: SharedPreferences
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTotalScoreBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
-        sharedPref = getSharedPreferences("ScorePref", Context.MODE_PRIVATE)
+        val acaScore: Int = intent.getIntExtra("AcademicScore", 0)
+        val nScore: Int = intent.getIntExtra("nScore", 0)
+        val laScore: Int = intent.getIntExtra("laScore", 0)
+        val businessScore: Int = intent.getIntExtra("businessScore", 0)
+        val testScore: Int = intent.getIntExtra("testScore", 0)
+        val workExp: Int = intent.getIntExtra("workExp", 0)
 
-        var result = 0
 
-        var score: Int = intent.getIntExtra("score", 0)
+        var score: Int = intent.getIntExtra("score", 0) - testScore
         binding.finalScore.text = score.toString()
 
-//        Handler().postDelayed(Runnable {
-//            while (result == score) {
-//                result++
-//                binding.finalScore.text = result.toString()
-//
-//            }
-//        }, 1000)
 
-        binding.academicScoreTextview.text = "Academic Score: ${sharedPref.getInt("AcademicScore", 0).toString()}"
-        binding.notableAchievementsTextview.text = "Notable Achievements: ${sharedPref.getInt("NotableScore", 0).toString()}"
-        binding.collegeActivityTextview.text = "College Activity Score: ${sharedPref.getInt("LaScore", 0).toString()}"
-        binding.businessAchievementsTextview.text = "Business Achievements Score: ${sharedPref.getInt("businessScore", 0).toString()}"
-        binding.greGmatTextview.text = "GRE / GMAT Score: ${sharedPref.getInt("testScore", 0).toString()}"
-        binding.workExperienceTextview.text = "Work Experience Score: ${
-            sharedPref.getInt(
-                "companyType",
-                0
-            ) + sharedPref.getInt("workExp", 0)
-        }"
+        binding.academicScoreTextview.text = "Academic Score: $acaScore"
+        binding.notableAchievementsTextview.text = "Notable Achievements: $nScore"
+        binding.collegeActivityTextview.text = "College Activity: $laScore"
+        binding.businessAchievementsTextview.text = "Business Achievements Score: $businessScore"
+        binding.greGmatTextview.text = "GRE / GMAT Score: $testScore"
+        binding.workExperienceTextview.text = "Work Experience Score: $workExp"
+
+
     }
 }
