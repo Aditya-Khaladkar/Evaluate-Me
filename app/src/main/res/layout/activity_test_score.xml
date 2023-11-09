@@ -20,29 +20,102 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_marginTop="50dp"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
+            android:layout_marginTop="50dp"
             android:src="@drawable/gre" />
 
-        <SeekBar
-            android:layout_marginTop="20dp"
-            android:id="@+id/greSeekBar"
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="1000"
-            android:progress="0"
-            android:progressBackgroundTint="#E0E0E0"
-            android:progressTint="#4CAF50"
-            android:thumbTint="#4CAF50" />
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/txtGreScore"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="GRE Score: 1000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/greScoreRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/greScoreOption335Plus"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="335 +" />
+
+                    <RadioButton
+                        android:id="@+id/greScoreOption330Plus"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_2"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="330 +" />
+
+                    <RadioButton
+                        android:id="@+id/greScoreOption328Minus330"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="328-330" />
+
+                    <RadioButton
+                        android:id="@+id/greScoreOption325Minus328"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_4"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="325 – 328" />
+
+                    <RadioButton
+                        android:id="@+id/greScoreOption320Minus325"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_4"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="320 – 325" />
+
+                    <RadioButton
+                        android:id="@+id/greScoreOptionBelow320"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_4"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Below 320" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </HorizontalScrollView>
 
         <ImageView
             android:layout_width="100dp"
@@ -51,33 +124,94 @@
             android:layout_marginTop="20dp"
             android:src="@drawable/gmat" />
 
-        <SeekBar
-            android:layout_marginTop="20dp"
-            android:id="@+id/gmatSeekBar"
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="1000"
-            android:progress="0"
-            android:progressBackgroundTint="#E0E0E0"
-            android:progressTint="#2196F3"
-            android:thumbTint="#2196F3" />
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/txtGMATScore"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="GMAT Score: 1000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/gmatScoreRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/gmatScoreOption760Plus"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="760 +" />
+
+                    <RadioButton
+                        android:id="@+id/gmatScoreOption740Plus"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_2"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="740 +" />
+
+                    <RadioButton
+                        android:id="@+id/gmatScoreOption700Minus730"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_3"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="700-730" />
+
+                    <RadioButton
+                        android:id="@+id/gmatScoreOption650Minus690"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_4"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="650 – 690" />
+
+                    <RadioButton
+                        android:id="@+id/gmatScoreOptionBelow650"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/app_theme"
+                        android:drawableTop="@drawable/score10_4"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Below 650" />
+                </RadioGroup>
+            </LinearLayout>
+        </HorizontalScrollView>
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
             <RadioButton
                 android:layout_width="100dp"
@@ -93,7 +227,7 @@
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
             <RadioButton
                 android:layout_width="100dp"
@@ -109,15 +243,15 @@
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
         </RadioGroup>
 
         <Button
-            android:layout_marginTop="50dp"
             android:id="@+id/btnTestScoreNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:text="next" />
 
     </LinearLayout>

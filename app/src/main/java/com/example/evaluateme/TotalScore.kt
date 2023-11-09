@@ -27,7 +27,7 @@ class TotalScore : AppCompatActivity() {
         val workExp: Int = intent.getIntExtra("workExp", 0)
 
 
-        var score: Int = intent.getIntExtra("score", 0) - testScore
+        var score: Int = intent.getIntExtra("score", 0)
         binding.finalScore.text = score.toString()
 
 

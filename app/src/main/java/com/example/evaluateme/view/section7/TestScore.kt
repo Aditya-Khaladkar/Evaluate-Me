@@ -5,7 +5,10 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.RadioButton
 import android.widget.SeekBar
+import android.widget.Toast
 import com.example.evaluateme.R
 import com.example.evaluateme.databinding.ActivityTestScoreBinding
 import com.example.evaluateme.view.section8.WorkExperience
@@ -28,72 +31,82 @@ class TestScore : AppCompatActivity() {
 
         var testScore = 0
 
-        binding.greSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
-            override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
-                if (p1 > 335) {
-                    score += 25
-                    testScore += 25
-                } else if (p1 > 330) {
-                    score += 24
-                    testScore += 24
-                } else if (p1 in 329..329) {
-                    score += 22
-                    testScore += 22
-                } else if (p1 in 325 .. 328) {
-                    score += 20
-                    testScore += 20
-                } else if (p1 in 320 .. 325) {
-                    score += 18
-                    testScore += 18
-                } else if (p1 < 320) {
-                    score += 15
-                    testScore += 15
-                }
-                binding.txtGreScore.text = "GRE Score: ${p1.toString()}"
-            }
-
-            override fun onStartTrackingTouch(p0: SeekBar?) {
-
-            }
-
-            override fun onStopTrackingTouch(p0: SeekBar?) {
-
-            }
-
-        })
-
-        binding.gmatSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
-                if (p1 >= 760) {
-                    score += 25
-                    testScore += 25
-                } else if (p1 >= 740) {
-                    score += 24
-                    testScore += 24
-                } else if (p1 in 700..730) {
-                    score += 22
-                    testScore += 22
-                } else if (p1 in 650..690) {
-                    score += 19
-                    testScore += 19
-                } else if (p1 < 650) {
-                    score += 15
-                    testScore += 15
-                }
-                binding.txtGMATScore.text = "GMAT Score: ${p1.toString()}"
-            }
-
-            override fun onStartTrackingTouch(p0: SeekBar?) {
-
-            }
-
-            override fun onStopTrackingTouch(p0: SeekBar?) {
-
-            }
-        })
 
         // btn onClick
         binding.btnTestScoreNext.setOnClickListener {
+
+
+            // for GRE score
+            val selectedRadioButtonIdGRE = binding.greScoreRadioGroup.checkedRadioButtonId
+            if (selectedRadioButtonIdGRE != -1) {
+                val selectedRadioButtonGRE = findViewById<RadioButton>(selectedRadioButtonIdGRE)
+                val selectGRE = selectedRadioButtonGRE.text.toString()
+
+                Toast.makeText(this, selectGRE, Toast.LENGTH_LONG).show()
+
+                when (selectGRE) {
+                    "335 +" -> {
+                        score += 25
+                        testScore += 25
+                    }
+                    "330 +" -> {
+                        score += 24
+                        testScore += 24
+                    }
+                    "328-330" -> {
+                        score += 22
+                        testScore += 22
+                    }
+                    "325 – 328" -> {
+                        score += 20
+                        testScore += 20
+                    }
+                    "320 – 325" -> {
+                        score += 18
+                        testScore += 18
+                    }
+                    "Below 320" -> {
+                        score += 15
+                        testScore += 15
+                    }
+                }
+            }
+
+
+            // for GMAT score
+            val selectedRadioButtonIdGMAT = binding.gmatScoreRadioGroup.checkedRadioButtonId
+            if (selectedRadioButtonIdGMAT != -1) {
+                val selectedRadioButtonGMAT = findViewById<RadioButton>(selectedRadioButtonIdGMAT)
+                val selectGMAT = selectedRadioButtonGMAT.text.toString()
+
+                Toast.makeText(this, selectGMAT, Toast.LENGTH_LONG).show()
+
+                when (selectGMAT) {
+                    "760 +" -> {
+                        score += 25
+                        testScore += 25
+                    }
+                    "740 +" -> {
+                        score += 24
+                        testScore += 24
+                    }
+                    "700-730" -> {
+                        score += 22
+                        testScore += 22
+                    }
+                    "650 – 690" -> {
+                        score += 19
+                        testScore += 19
+                    }
+                    "Below 650" -> {
+                        score += 15
+                        testScore += 15
+                    }
+                }
+            }
+
+
+            Log.d("@debug", "onCreate: $testScore")
 
             val intent = Intent(this, WorkExperience::class.java)
             intent.putExtra("score", score)
